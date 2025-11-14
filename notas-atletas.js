@@ -14,7 +14,7 @@ function calcularMediaNotasAtletas(atletas){
 
     const mensagem = `
       Atleta: ${atleta.nome}
-      Notas Obtidas: ${atleta.notas.join(", ")}   
+      Notas Obtidas: ${notasOrdenadas.join(",")}
       Média Válida: ${media.toFixed(2)}
     `;
 
@@ -44,4 +44,4 @@ let atletas = [
  }
 ];
 
-console.log(calcularMediaNotasAtletas(atletas));
+calcularMediaNotasAtletas(atletas);
